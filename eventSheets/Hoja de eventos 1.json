@@ -1,5 +1,258 @@
 {
 	"name": "Hoja de eventos 1",
-	"events": [],
-	"sid": 813206273930052
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Botón",
+					"sid": 532292810618201
+				}
+			],
+			"actions": [
+				{
+					"id": "scroll-to-x",
+					"objectClass": "System",
+					"sid": 519148819109020,
+					"parameters": {
+						"x": "LayoutWidth "
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Botón2",
+					"sid": 889854129974621,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 483795199863212
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "HDMI",
+					"sid": 177917800457486,
+					"parameters": {
+						"object": "HDMISlot"
+					}
+				},
+				{
+					"id": "is-enabled",
+					"objectClass": "HDMI",
+					"sid": 796936382034326,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "HDMI",
+					"sid": 981746954655798,
+					"parameters": {
+						"x": "HDMISlot.X",
+						"y": "HDMISlot.Y"
+					}
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Variables",
+					"sid": 227991792964026,
+					"parameters": {
+						"instance-variable": "Index",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "HDMI",
+					"sid": 804455518256846,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 267585108735865
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "USB",
+					"sid": 921823366793563,
+					"parameters": {
+						"object": "USBSlot"
+					}
+				},
+				{
+					"id": "is-enabled",
+					"objectClass": "USB",
+					"sid": 385003729302221,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "USB",
+					"sid": 490546811521602,
+					"parameters": {
+						"x": "USBSlot.X",
+						"y": "USBSlot.Y"
+					}
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Variables",
+					"sid": 164223329411171,
+					"parameters": {
+						"instance-variable": "Index",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "USB",
+					"sid": 516169495926916,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 833865336614332
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "USBC",
+					"sid": 643994533834836,
+					"parameters": {
+						"object": "USBCSlot"
+					}
+				},
+				{
+					"id": "is-enabled",
+					"objectClass": "USBC",
+					"sid": 207544744755230,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "USBC",
+					"sid": 224449281617390,
+					"parameters": {
+						"x": "USBCSlot.X",
+						"y": "USBCSlot.Y"
+					}
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Variables",
+					"sid": 449157331851722,
+					"parameters": {
+						"instance-variable": "Index",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "USBC",
+					"sid": 954822829402810,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 835159224340550
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-in-preview",
+					"objectClass": "System",
+					"sid": 113548942030723
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Variables",
+					"sid": 178293122768023,
+					"parameters": {
+						"instance-variable": "Index",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "Light",
+					"sid": 200575691431394,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Sprite2",
+					"sid": 977723470099048,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Botón2",
+					"sid": 873384944209899,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 872796702674685
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Botón2",
+					"sid": 737256256423212
+				}
+			],
+			"actions": [
+				{
+					"id": "scroll-to-x",
+					"objectClass": "System",
+					"sid": 406799386508235,
+					"parameters": {
+						"x": "0"
+					}
+				},
+				{
+					"id": "scroll-to-y",
+					"objectClass": "System",
+					"sid": 828440328421079,
+					"parameters": {
+						"y": "LayoutHeight"
+					}
+				}
+			],
+			"sid": 223768869327703
+		}
+	],
+	"sid": 600668306176763
 }

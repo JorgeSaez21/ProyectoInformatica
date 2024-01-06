@@ -1,14 +1,58 @@
 {
 	"projectFormatVersion": 1,
 	"savedWithRelease": 36802,
-	"name": "Nuevo proyecto",
+	"name": "JuegoInformatica",
 	"runtime": "c3",
 	"useWorker": "auto",
 	"bundleAddons": false,
-	"usedAddons": [],
-	"uniqueId": "htxyxvanq5o",
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Button",
+			"name": "Botón",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Texto",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "DragnDrop",
+			"name": "Arrastrar y soltar",
+			"author": "Scirra",
+			"bundled": false
+		}
+	],
+	"uniqueId": "5kfmr4ceviv",
 	"objectTypes": {
-		"items": [],
+		"items": [
+			"HDMISlot",
+			"HDMI",
+			"USB",
+			"Variables",
+			"ConectarTexto",
+			"USBCSlot",
+			"USBC",
+			"Light",
+			"NextButton",
+			"Sprite",
+			"Botón",
+			"USBSlot",
+			"Sprite2",
+			"Botón2"
+		],
 		"subfolders": []
 	},
 	"autosaveData": null,
@@ -55,7 +99,7 @@
 				{
 					"name": "icono-16.png",
 					"type": "image/png",
-					"sid": 684147458554298,
+					"sid": 744314024773353,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -63,7 +107,7 @@
 				{
 					"name": "icono-32.png",
 					"type": "image/png",
-					"sid": 368946626836231,
+					"sid": 758461036739918,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -71,7 +115,7 @@
 				{
 					"name": "icono-64.png",
 					"type": "image/png",
-					"sid": 104074567108455,
+					"sid": 193554956090575,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -79,7 +123,7 @@
 				{
 					"name": "icono-128.png",
 					"type": "image/png",
-					"sid": 560447708316322,
+					"sid": 519707032670664,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -87,7 +131,7 @@
 				{
 					"name": "icono-256.png",
 					"type": "image/png",
-					"sid": 429090443177327,
+					"sid": 795191340479831,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -95,7 +139,7 @@
 				{
 					"name": "icono-512.png",
 					"type": "image/png",
-					"sid": 785459139153862,
+					"sid": 996127299096210,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -103,7 +147,7 @@
 				{
 					"name": "logo-carga.png",
 					"type": "image/png",
-					"sid": 342166639396073,
+					"sid": 727489761963021,
 					"icon-info": {
 						"purpose": "loading-logo"
 					}
