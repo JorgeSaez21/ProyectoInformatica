@@ -1,0 +1,66 @@
+{
+	"name": "FIREWARE",
+	"plugin-id": "Sprite",
+	"sid": 745463622854666,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "DragnDrop",
+			"name": "ArrastrarYSoltar",
+			"sid": 542758545740444
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 61,
+						"height": 222,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3984598,
+						"collisionPoly": {
+							"points": [
+								0.5573770491803278,
+								0.03153153153153153,
+								0.7377049180327869,
+								0.06306306306306306,
+								0.7868852459016393,
+								0.13063063063063063,
+								0.7868852459016393,
+								0.3108108108108108,
+								0.5573770491803278,
+								0.990990990990991,
+								0.3770491803278688,
+								0.9774774774774775,
+								0.18032786885245902,
+								0.3918918918918919,
+								0.18032786885245902,
+								0.22522522522522523,
+								0.29508196721311475,
+								0.11261261261261261
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 196467991098402,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,64 @@
+{
+	"name": "USBTipeB",
+	"plugin-id": "Sprite",
+	"sid": 746523365475624,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "DragnDrop",
+			"name": "ArrastrarYSoltar",
+			"sid": 551904129953243
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 118,
+						"height": 344,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3784586,
+						"collisionPoly": {
+							"points": [
+								0.22033898305084745,
+								0.05813953488372093,
+								0.7542372881355932,
+								0.06395348837209303,
+								0.8305084745762712,
+								0.30523255813953487,
+								0.8305084745762712,
+								0.5406976744186046,
+								0.576271186440678,
+								0.9854651162790697,
+								0.3898305084745763,
+								0.9854651162790697,
+								0.15254237288135594,
+								0.5436046511627907,
+								0.15254237288135594,
+								0.30523255813953487
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 700143859471236,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

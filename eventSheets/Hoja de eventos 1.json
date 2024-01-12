@@ -26,6 +26,22 @@
 					"parameters": {
 						"visibility": "invisible"
 					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Texto",
+					"sid": 971399983919271,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Botón6",
+					"sid": 231865263730042,
+					"parameters": {
+						"visibility": "invisible"
+					}
 				}
 			],
 			"sid": 483795199863212
@@ -74,6 +90,23 @@
 					"behaviorType": "ArrastrarYSoltar",
 					"parameters": {
 						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Texto1",
+					"sid": 896952148759168,
+					"parameters": {
+						"x": "HDMI.X-60",
+						"y": "HDMI.Y+175"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Texto1",
+					"sid": 747006026190344,
+					"parameters": {
+						"opacity": "100"
 					}
 				}
 			],
@@ -124,6 +157,23 @@
 					"parameters": {
 						"state": "disabled"
 					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Texto2",
+					"sid": 214092425203161,
+					"parameters": {
+						"x": "USB.X-60",
+						"y": "USB.Y+175"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Texto2",
+					"sid": 964666953023757,
+					"parameters": {
+						"opacity": "100"
+					}
 				}
 			],
 			"sid": 833865336614332
@@ -172,6 +222,23 @@
 					"behaviorType": "ArrastrarYSoltar",
 					"parameters": {
 						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Texto3",
+					"sid": 251912403810881,
+					"parameters": {
+						"x": "USBC.X-60",
+						"y": "USBC.Y+175"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Texto3",
+					"sid": 820351727424853,
+					"parameters": {
+						"opacity": "100"
 					}
 				}
 			],
@@ -237,21 +304,773 @@
 				{
 					"id": "scroll-to-x",
 					"objectClass": "System",
-					"sid": 406799386508235,
+					"sid": 861447044901820,
 					"parameters": {
-						"x": "0"
+						"x": "LayoutWidth"
 					}
 				},
 				{
 					"id": "scroll-to-y",
 					"objectClass": "System",
-					"sid": 828440328421079,
+					"sid": 131352987110878,
 					"parameters": {
 						"y": "LayoutHeight"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Botón3",
+					"sid": 656764028046139,
+					"parameters": {
+						"visibility": "invisible"
 					}
 				}
 			],
 			"sid": 223768869327703
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "USBMini",
+					"sid": 389771606217378,
+					"parameters": {
+						"object": "USBMiniSlot"
+					}
+				},
+				{
+					"id": "is-enabled",
+					"objectClass": "USBMini",
+					"sid": 502215067813175,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "USBMini",
+					"sid": 989858177110416,
+					"parameters": {
+						"x": "USBMiniSlot.X",
+						"y": "USBMiniSlot.Y"
+					}
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Variables",
+					"sid": 927673364155777,
+					"parameters": {
+						"instance-variable": "Index",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "USBMini",
+					"sid": 987007554908219,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Texto4",
+					"sid": 711894062535597,
+					"parameters": {
+						"x": "USBMini.X-60",
+						"y": "USBMini.Y+200"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Texto4",
+					"sid": 422614622535257,
+					"parameters": {
+						"opacity": "100"
+					}
+				}
+			],
+			"sid": 266128583962367
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "XLR",
+					"sid": 423888027345995,
+					"parameters": {
+						"object": "XLRSlot"
+					}
+				},
+				{
+					"id": "is-enabled",
+					"objectClass": "XLR",
+					"sid": 600671776807949,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "XLR",
+					"sid": 808877802206214,
+					"parameters": {
+						"x": "XLRSlot.X",
+						"y": "XLRSlot.Y"
+					}
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Variables",
+					"sid": 249756717724093,
+					"parameters": {
+						"instance-variable": "Index",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "XLR",
+					"sid": 983353623426433,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Texto5",
+					"sid": 750360234487840,
+					"parameters": {
+						"x": "XLR.X-60",
+						"y": "XLR.Y+200"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Texto5",
+					"sid": 832059329327890,
+					"parameters": {
+						"opacity": "100"
+					}
+				}
+			],
+			"sid": 712898092803234
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "USBTipeB",
+					"sid": 931768678410053,
+					"parameters": {
+						"object": "USBTipeBSlot"
+					}
+				},
+				{
+					"id": "is-enabled",
+					"objectClass": "USBTipeB",
+					"sid": 589566706167430,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "USBTipeB",
+					"sid": 473936996754036,
+					"parameters": {
+						"x": "USBTipeBSlot.X",
+						"y": "USBTipeBSlot.Y"
+					}
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Variables",
+					"sid": 601276075998633,
+					"parameters": {
+						"instance-variable": "Index",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "USBTipeB",
+					"sid": 941251940960254,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Texto6",
+					"sid": 769194366839758,
+					"parameters": {
+						"x": "USBTipeB.X-60",
+						"y": "USBTipeB.Y+200"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Texto6",
+					"sid": 348815296643028,
+					"parameters": {
+						"opacity": "100"
+					}
+				}
+			],
+			"sid": 955253671800209
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-in-preview",
+					"objectClass": "System",
+					"sid": 347199665473362
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Variables",
+					"sid": 470356132005977,
+					"parameters": {
+						"instance-variable": "Index",
+						"comparison": 0,
+						"value": "6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "Light2",
+					"sid": 705352002795088,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Sprite5",
+					"sid": 697921371275441,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Botón3",
+					"sid": 627695322469102,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 232737208085732
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Botón3",
+					"sid": 696224122090024
+				}
+			],
+			"actions": [
+				{
+					"id": "scroll-to-x",
+					"objectClass": "System",
+					"sid": 511657448642710,
+					"parameters": {
+						"x": "-LayoutWidth\r\n"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Botón5",
+					"sid": 293742904416626,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 506680221281228
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "FIREWARE",
+					"sid": 425841546015353,
+					"parameters": {
+						"object": "PUERTOFIREWARE"
+					}
+				},
+				{
+					"id": "is-enabled",
+					"objectClass": "FIREWARE",
+					"sid": 838178712150490,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "FIREWARE",
+					"sid": 652262612805263,
+					"parameters": {
+						"x": "PUERTOFIREWARE.X",
+						"y": "PUERTOFIREWARE.Y"
+					}
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Variables",
+					"sid": 507706880201432,
+					"parameters": {
+						"instance-variable": "Index",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "FIREWARE",
+					"sid": 559325936029032,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Texto10",
+					"sid": 430386057990368,
+					"parameters": {
+						"opacity": "100"
+					}
+				}
+			],
+			"sid": 694468603961515
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "SPDIF",
+					"sid": 900081184096692,
+					"parameters": {
+						"object": "PuertoSPDIF"
+					}
+				},
+				{
+					"id": "is-enabled",
+					"objectClass": "SPDIF",
+					"sid": 329017894830748,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "SPDIF",
+					"sid": 383033597987669,
+					"parameters": {
+						"x": "PuertoSPDIF.X",
+						"y": "PuertoSPDIF.Y"
+					}
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Variables",
+					"sid": 159292489122720,
+					"parameters": {
+						"instance-variable": "Index",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "SPDIF",
+					"sid": 296380568177009,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Texto9",
+					"sid": 851935562956067,
+					"parameters": {
+						"opacity": "100"
+					}
+				}
+			],
+			"sid": 513413060912739
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "USBMICROB",
+					"sid": 632287429871378,
+					"parameters": {
+						"object": "PuertoUSBMICROB"
+					}
+				},
+				{
+					"id": "is-enabled",
+					"objectClass": "USBMICROB",
+					"sid": 645532459649482,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "USBMICROB",
+					"sid": 970548649254515,
+					"parameters": {
+						"x": "PuertoUSBMICROB.X",
+						"y": "PuertoUSBMICROB.Y"
+					}
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Variables",
+					"sid": 218350580075311,
+					"parameters": {
+						"instance-variable": "Index",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "USBMICROB",
+					"sid": 749685690865446,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Texto8",
+					"sid": 966702144856864,
+					"parameters": {
+						"opacity": "100"
+					}
+				}
+			],
+			"sid": 134481589363484
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "USBCABLE",
+					"sid": 417840335758081,
+					"parameters": {
+						"object": "PUERTOUSB"
+					}
+				},
+				{
+					"id": "is-enabled",
+					"objectClass": "USBCABLE",
+					"sid": 438854820211248,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "USBCABLE",
+					"sid": 899472824337454,
+					"parameters": {
+						"x": "PUERTOUSB.X",
+						"y": "PUERTOUSB.Y"
+					}
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Variables",
+					"sid": 971044006049307,
+					"parameters": {
+						"instance-variable": "Index",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "USBCABLE",
+					"sid": 281570994225600,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Texto7",
+					"sid": 371677287172906,
+					"parameters": {
+						"opacity": "100"
+					}
+				}
+			],
+			"sid": 949259713626905
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-in-preview",
+					"objectClass": "System",
+					"sid": 115012491017770
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Variables",
+					"sid": 120780661008448,
+					"parameters": {
+						"instance-variable": "Index",
+						"comparison": 0,
+						"value": "10"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "Light3",
+					"sid": 189242180385853,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Sprite15",
+					"sid": 349788634971823,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Botón5",
+					"sid": 582510111926778,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 527257803667138
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Botón5",
+					"sid": 759809560088480
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Botón5",
+					"sid": 154662831952532,
+					"disabled": true,
+					"parameters": {
+						"instance-variable": "Accion",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "FIREWARE",
+					"sid": 238446191098917,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "PUERTOFIREWARE",
+					"sid": 703677856619828,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "SPDIF",
+					"sid": 104382937405373,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "PuertoSPDIF",
+					"sid": 314143962217012,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "USBMICROB",
+					"sid": 268745575526423,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "PuertoUSBMICROB",
+					"sid": 628281272381780,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "USBCABLE",
+					"sid": 483152595982921,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "PUERTOUSB",
+					"sid": 651815314602841,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Texto",
+					"sid": 297111003463537,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Sprite15",
+					"sid": 462249503842806,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Light3",
+					"sid": 406069518444488,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Texto7",
+					"sid": 560295892513431,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Texto8",
+					"sid": 226094620650675,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Texto9",
+					"sid": 905734411577495,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Texto10",
+					"sid": 759626305523896,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Botón5",
+					"sid": 216930271902237,
+					"parameters": {
+						"instance-variable": "Accion",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Botón5",
+					"sid": 552402823869763,
+					"parameters": {
+						"x": "10000",
+						"y": "10000"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Botón6",
+					"sid": 302887039870525,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 262510802368794
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 877707073343592,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Botón6",
+					"sid": 143745727283805
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 391100797146522
+				}
+			],
+			"sid": 215139292824808
 		}
 	],
 	"sid": 600668306176763

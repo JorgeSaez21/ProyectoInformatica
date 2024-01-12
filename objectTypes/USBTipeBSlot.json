@@ -1,0 +1,58 @@
+{
+	"name": "USBTipeBSlot",
+	"plugin-id": "Sprite",
+	"sid": 990530354780923,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Index",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 157234986545701
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 208,
+						"height": 180,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7938047,
+						"collisionPoly": {
+							"points": [
+								0.13942307692307693,
+								0.14444444444444443,
+								0.8894230769230769,
+								0.18888888888888888,
+								0.8509615384615384,
+								0.9166666666666666,
+								0.1201923076923077,
+								0.9111111111111111
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 365978748017668,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

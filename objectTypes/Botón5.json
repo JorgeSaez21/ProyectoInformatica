@@ -1,0 +1,16 @@
+{
+	"name": "Botón5",
+	"plugin-id": "Button",
+	"sid": 410454224160718,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Accion",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 171274888475759
+		}
+	],
+	"behaviorTypes": []
+}

@@ -1,0 +1,66 @@
+{
+	"name": "USBCABLE",
+	"plugin-id": "Sprite",
+	"sid": 814596413676702,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "DragnDrop",
+			"name": "ArrastrarYSoltar",
+			"sid": 743959698590001
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 74,
+						"height": 229,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6256812,
+						"collisionPoly": {
+							"points": [
+								0.33783783783783783,
+								0.043668122270742356,
+								0.6351351351351351,
+								0.043668122270742356,
+								0.7027027027027027,
+								0.0611353711790393,
+								0.7837837837837838,
+								0.13537117903930132,
+								0.7837837837837838,
+								0.42358078602620086,
+								0.5675675675675675,
+								0.9781659388646288,
+								0.4189189189189189,
+								0.9694323144104804,
+								0.22972972972972974,
+								0.48034934497816595,
+								0.24324324324324326,
+								0.14847161572052403
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 389591684350582,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

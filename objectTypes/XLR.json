@@ -1,0 +1,60 @@
+{
+	"name": "XLR",
+	"plugin-id": "Sprite",
+	"sid": 636683024928225,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "DragnDrop",
+			"name": "ArrastrarYSoltar",
+			"sid": 273383416851563
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 156,
+						"height": 514,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 409219,
+						"collisionPoly": {
+							"points": [
+								0.4423076923076923,
+								0.01556420233463035,
+								0.8525641025641025,
+								0.042801556420233464,
+								0.9551282051282052,
+								0.1245136186770428,
+								0.5769230769230769,
+								0.9922178988326849,
+								0.4358974358974359,
+								0.980544747081712,
+								0.14743589743589744,
+								0.058365758754863814
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 616412754916604,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

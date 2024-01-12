@@ -1,0 +1,64 @@
+{
+	"name": "PuertoUSBMICROB",
+	"plugin-id": "Sprite",
+	"sid": 277382117965143,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 73,
+						"height": 42,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9607482,
+						"collisionPoly": {
+							"points": [
+								0.5342465753424658,
+								0.30952380952380953,
+								0.7808219178082192,
+								0.35714285714285715,
+								0.7945205479452054,
+								0.42857142857142855,
+								0.7945205479452054,
+								0.5952380952380952,
+								0.7808219178082192,
+								0.6666666666666666,
+								0.547945205479452,
+								0.7142857142857143,
+								0.3561643835616438,
+								0.7142857142857143,
+								0.273972602739726,
+								0.6904761904761905,
+								0.2191780821917808,
+								0.6666666666666666,
+								0.2054794520547945,
+								0.6190476190476191,
+								0.2328767123287671,
+								0.3333333333333333
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 518517565198191,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
