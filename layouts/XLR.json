@@ -160,7 +160,9 @@
 						"read-aloud": false
 					},
 					"uid": 7,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Index": 0
+					},
 					"behaviors": {},
 					"world": {
 						"x": 235,
@@ -271,7 +273,9 @@
 						"read-aloud": false
 					},
 					"uid": 9,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Index": 0
+					},
 					"behaviors": {},
 					"world": {
 						"x": 1048,
@@ -465,10 +469,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1604.184998970421,
-						"y": 332.0360820156389,
-						"width": 72,
-						"height": 79.61172816886574,
+						"x": 1611,
+						"y": 336,
+						"width": 64,
+						"height": 80.61172816886574,
 						"originX": 0,
 						"originY": 0,
 						"color": [

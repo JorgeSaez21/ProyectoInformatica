@@ -21,14 +21,6 @@
 				},
 				{
 					"id": "set-visible",
-					"objectClass": "Botón2",
-					"sid": 889854129974621,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
 					"objectClass": "Texto",
 					"sid": 971399983919271,
 					"parameters": {
@@ -39,6 +31,14 @@
 					"id": "set-visible",
 					"objectClass": "Botón6",
 					"sid": 231865263730042,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Botón2",
+					"sid": 134419055085309,
 					"parameters": {
 						"visibility": "invisible"
 					}
@@ -76,8 +76,8 @@
 				},
 				{
 					"id": "add-to-instvar",
-					"objectClass": "Variables",
-					"sid": 227991792964026,
+					"objectClass": "ConectarTexto",
+					"sid": 794493374699629,
 					"parameters": {
 						"instance-variable": "Index",
 						"value": "1"
@@ -142,8 +142,8 @@
 				},
 				{
 					"id": "add-to-instvar",
-					"objectClass": "Variables",
-					"sid": 164223329411171,
+					"objectClass": "ConectarTexto",
+					"sid": 276298055363792,
 					"parameters": {
 						"instance-variable": "Index",
 						"value": "1"
@@ -208,8 +208,8 @@
 				},
 				{
 					"id": "add-to-instvar",
-					"objectClass": "Variables",
-					"sid": 449157331851722,
+					"objectClass": "ConectarTexto",
+					"sid": 860813225026754,
 					"parameters": {
 						"instance-variable": "Index",
 						"value": "1"
@@ -248,14 +248,23 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "is-in-preview",
+					"id": "while",
 					"objectClass": "System",
-					"sid": 113548942030723
+					"sid": 621361710334424
+				},
+				{
+					"id": "compare-text",
+					"objectClass": "ConectarTexto",
+					"sid": 790544883634363,
+					"parameters": {
+						"text-to-compare": "\"PUERTOS\"",
+						"case-sensitivity": "ignore-case"
+					}
 				},
 				{
 					"id": "compare-instance-variable",
-					"objectClass": "Variables",
-					"sid": 178293122768023,
+					"objectClass": "ConectarTexto",
+					"sid": 219851990163460,
 					"parameters": {
 						"instance-variable": "Index",
 						"comparison": 0,
@@ -286,6 +295,14 @@
 					"sid": 873384944209899,
 					"parameters": {
 						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "ConectarTexto",
+					"sid": 434874052677173,
+					"parameters": {
+						"text": "\"PUERT\""
 					}
 				}
 			],
@@ -358,8 +375,8 @@
 				},
 				{
 					"id": "add-to-instvar",
-					"objectClass": "Variables",
-					"sid": 927673364155777,
+					"objectClass": "ConectarTexto",
+					"sid": 534306747248217,
 					"parameters": {
 						"instance-variable": "Index",
 						"value": "1"
@@ -424,8 +441,8 @@
 				},
 				{
 					"id": "add-to-instvar",
-					"objectClass": "Variables",
-					"sid": 249756717724093,
+					"objectClass": "ConectarTexto",
+					"sid": 650672856639199,
 					"parameters": {
 						"instance-variable": "Index",
 						"value": "1"
@@ -490,8 +507,8 @@
 				},
 				{
 					"id": "add-to-instvar",
-					"objectClass": "Variables",
-					"sid": 601276075998633,
+					"objectClass": "ConectarTexto",
+					"sid": 789336334589735,
 					"parameters": {
 						"instance-variable": "Index",
 						"value": "1"
@@ -530,14 +547,23 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "is-in-preview",
+					"id": "while",
 					"objectClass": "System",
-					"sid": 347199665473362
+					"sid": 301642784833995
+				},
+				{
+					"id": "compare-text",
+					"objectClass": "ConectarTexto",
+					"sid": 743215356026526,
+					"parameters": {
+						"text-to-compare": "\"PUERT\"",
+						"case-sensitivity": "ignore-case"
+					}
 				},
 				{
 					"id": "compare-instance-variable",
-					"objectClass": "Variables",
-					"sid": 470356132005977,
+					"objectClass": "ConectarTexto",
+					"sid": 613711660670957,
 					"parameters": {
 						"instance-variable": "Index",
 						"comparison": 0,
@@ -549,7 +575,7 @@
 				{
 					"id": "set-opacity",
 					"objectClass": "Light2",
-					"sid": 705352002795088,
+					"sid": 858597826199514,
 					"parameters": {
 						"opacity": "100"
 					}
@@ -557,7 +583,7 @@
 				{
 					"id": "set-opacity",
 					"objectClass": "Sprite5",
-					"sid": 697921371275441,
+					"sid": 494682787919807,
 					"parameters": {
 						"opacity": "0"
 					}
@@ -565,13 +591,21 @@
 				{
 					"id": "set-visible",
 					"objectClass": "Botón3",
-					"sid": 627695322469102,
+					"sid": 847952740087554,
 					"parameters": {
 						"visibility": "visible"
 					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "ConectarTexto",
+					"sid": 300318526562867,
+					"parameters": {
+						"text": "\"PUER\""
+					}
 				}
 			],
-			"sid": 232737208085732
+			"sid": 513332493044350
 		},
 		{
 			"eventType": "block",
@@ -632,8 +666,8 @@
 				},
 				{
 					"id": "add-to-instvar",
-					"objectClass": "Variables",
-					"sid": 507706880201432,
+					"objectClass": "ConectarTexto",
+					"sid": 954762752715811,
 					"parameters": {
 						"instance-variable": "Index",
 						"value": "1"
@@ -689,8 +723,8 @@
 				},
 				{
 					"id": "add-to-instvar",
-					"objectClass": "Variables",
-					"sid": 159292489122720,
+					"objectClass": "ConectarTexto",
+					"sid": 506626210047041,
 					"parameters": {
 						"instance-variable": "Index",
 						"value": "1"
@@ -746,8 +780,8 @@
 				},
 				{
 					"id": "add-to-instvar",
-					"objectClass": "Variables",
-					"sid": 218350580075311,
+					"objectClass": "ConectarTexto",
+					"sid": 740958090697304,
 					"parameters": {
 						"instance-variable": "Index",
 						"value": "1"
@@ -803,8 +837,8 @@
 				},
 				{
 					"id": "add-to-instvar",
-					"objectClass": "Variables",
-					"sid": 971044006049307,
+					"objectClass": "ConectarTexto",
+					"sid": 766068191321771,
 					"parameters": {
 						"instance-variable": "Index",
 						"value": "1"
@@ -834,14 +868,23 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "is-in-preview",
+					"id": "while",
 					"objectClass": "System",
-					"sid": 115012491017770
+					"sid": 569990550553702
+				},
+				{
+					"id": "compare-text",
+					"objectClass": "ConectarTexto",
+					"sid": 589128760512399,
+					"parameters": {
+						"text-to-compare": "\"PUER\"",
+						"case-sensitivity": "ignore-case"
+					}
 				},
 				{
 					"id": "compare-instance-variable",
-					"objectClass": "Variables",
-					"sid": 120780661008448,
+					"objectClass": "ConectarTexto",
+					"sid": 436620695157774,
 					"parameters": {
 						"instance-variable": "Index",
 						"comparison": 0,
@@ -853,7 +896,7 @@
 				{
 					"id": "set-opacity",
 					"objectClass": "Light3",
-					"sid": 189242180385853,
+					"sid": 564362621433815,
 					"parameters": {
 						"opacity": "100"
 					}
@@ -861,7 +904,7 @@
 				{
 					"id": "set-opacity",
 					"objectClass": "Sprite15",
-					"sid": 349788634971823,
+					"sid": 601648702821239,
 					"parameters": {
 						"opacity": "0"
 					}
@@ -869,13 +912,21 @@
 				{
 					"id": "set-visible",
 					"objectClass": "Botón5",
-					"sid": 582510111926778,
+					"sid": 335815524063896,
 					"parameters": {
 						"visibility": "visible"
 					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "ConectarTexto",
+					"sid": 649215159821008,
+					"parameters": {
+						"text": "\"PUE\""
+					}
 				}
 			],
-			"sid": 527257803667138
+			"sid": 923882238350949
 		},
 		{
 			"eventType": "block",
@@ -1046,13 +1097,6 @@
 				}
 			],
 			"sid": 262510802368794
-		},
-		{
-			"eventType": "block",
-			"conditions": [],
-			"actions": [],
-			"sid": 877707073343592,
-			"disabled": true
 		},
 		{
 			"eventType": "block",
